@@ -30,9 +30,9 @@ const f = ( firstName, callback ) => {
  /**
   * 
     Using a promise eliminates the need for a second argument in our Newfn 
-    "reject" is only called when the required argument is not met
+    the promise is rejected  only when the required argument is not met
     "resolve " allows the promise status nto pass 
-    The content of the resolve is displayed in the then block and errors are shown in the catch 
+    The content resolved is accessed and made use of in the .then block and errors are caught with the .catch block 
  */
 
 const Newfn = ( firstName ) => {
