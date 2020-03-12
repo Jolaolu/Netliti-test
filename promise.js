@@ -31,7 +31,7 @@ f( null, console.log )
  */
 
 
-const Newfn = ( firstName ) => {
+export const Newfn = ( firstName ) => {
     return new Promise( ( resolve, reject ) => {
 
         setTimeout( () => {
@@ -43,12 +43,3 @@ const Newfn = ( firstName ) => {
     } )
 
 }
-Newfn( 'Anjolaoluwa' )
-    .then( data => console.log(data)  )
-    .catch( e => console.log( e,  'error' ) )
-    .finally( console.log('finally, promise resolved') )
-
-Newfn( null )
-    .then( data => console.log( data ) )
-    .catch( e => console.log( e, 'error' ) )
-    .finally( console.log( 'finally, promise resolved' ) )
